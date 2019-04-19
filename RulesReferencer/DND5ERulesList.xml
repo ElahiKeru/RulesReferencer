@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rules>
+	<rule>
+		<title>The D20</title>
+		<details>In cases where the outcome of an action is uncertain, the game relies on rolls of a 20-sided die, a d20, to determine success and failure. Every character and monster in the game has capabilities defined by six [ABILITY SCORE]s. These ability scores and the [ABILITY MODIFIER]s derived from them are the basis for almost every d20 roll that a player makes on a character's or monster's behalf. [ABILITY CHECK]s, [ATTACK ROLL]s, and [SAVING THROW]s are the three main kinds of d20 rolls, forming the core of the rules of the game. All three follow these simple steps.
+     1.) Roll the die and add a modifier - Roll a d20 and add the relevant modifier. This is typically a modifier derived from one of the six [ABILITY SCORE]s and it sometimes includes a [PROFICIENCY] bonus to reflect a character's particular skill.
+     2.) Apply circumstantial bonuses and penalties - A class feature, spell, particular circumstance, or some other effect might give a bonus or penalty to the check
+     3.) Compare the total to a target number - If the total equals or exceeds the target number, the [ABILITY CHECK], [ATTACK ROLL], or [SAVING THROW] is a success. Otherwise it's a failure. The DM is usually the one who determines the target numbers and tells players whether their [ABILITY CHECK]s, [ATTACK ROLL]s, and [SAVING THROW]s succeed or fail.
+     The target number for an [ABILITY CHECK] or [SAVING THROW] is called a [DIFFICULTY CLASS (DC)].
+     The target number for an [ATTACK ROLL] is called an [ARMOR CLASS (AC)].</details>
+	</rule>
+	<rule>
+		<title></title>
+		<details></details>
+	</rule>
+</rules>
