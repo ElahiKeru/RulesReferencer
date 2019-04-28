@@ -38,16 +38,18 @@
             // 
             // TBSearchTerm
             // 
-            this.TBSearchTerm.Location = new System.Drawing.Point(12, 33);
+            this.TBSearchTerm.Location = new System.Drawing.Point(9, 27);
+            this.TBSearchTerm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TBSearchTerm.Name = "TBSearchTerm";
-            this.TBSearchTerm.Size = new System.Drawing.Size(182, 22);
+            this.TBSearchTerm.Size = new System.Drawing.Size(138, 20);
             this.TBSearchTerm.TabIndex = 0;
             // 
             // BTNSearch
             // 
-            this.BTNSearch.Location = new System.Drawing.Point(200, 33);
+            this.BTNSearch.Location = new System.Drawing.Point(150, 27);
+            this.BTNSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BTNSearch.Name = "BTNSearch";
-            this.BTNSearch.Size = new System.Drawing.Size(75, 23);
+            this.BTNSearch.Size = new System.Drawing.Size(56, 19);
             this.BTNSearch.TabIndex = 1;
             this.BTNSearch.Text = "Search";
             this.BTNSearch.UseVisualStyleBackColor = true;
@@ -58,9 +60,10 @@
             this.LVRulesList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.LVRulesList.Location = new System.Drawing.Point(12, 61);
+            this.LVRulesList.Location = new System.Drawing.Point(9, 50);
+            this.LVRulesList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LVRulesList.Name = "LVRulesList";
-            this.LVRulesList.Size = new System.Drawing.Size(182, 464);
+            this.LVRulesList.Size = new System.Drawing.Size(138, 378);
             this.LVRulesList.TabIndex = 2;
             this.LVRulesList.UseCompatibleStateImageBehavior = false;
             this.LVRulesList.View = System.Windows.Forms.View.List;
@@ -69,9 +72,10 @@
             // LBLSearch
             // 
             this.LBLSearch.AutoSize = true;
-            this.LBLSearch.Location = new System.Drawing.Point(13, 13);
+            this.LBLSearch.Location = new System.Drawing.Point(10, 11);
+            this.LBLSearch.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LBLSearch.Name = "LBLSearch";
-            this.LBLSearch.Size = new System.Drawing.Size(57, 17);
+            this.LBLSearch.Size = new System.Drawing.Size(44, 13);
             this.LBLSearch.TabIndex = 4;
             this.LBLSearch.Text = "Search:";
             // 
@@ -80,18 +84,21 @@
             this.TBRuleDetails.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TBRuleDetails.Location = new System.Drawing.Point(201, 62);
+            this.TBRuleDetails.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBRuleDetails.Location = new System.Drawing.Point(151, 50);
+            this.TBRuleDetails.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TBRuleDetails.Multiline = true;
             this.TBRuleDetails.Name = "TBRuleDetails";
             this.TBRuleDetails.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.TBRuleDetails.Size = new System.Drawing.Size(833, 463);
+            this.TBRuleDetails.Size = new System.Drawing.Size(626, 377);
             this.TBRuleDetails.TabIndex = 5;
             // 
             // BTNClear
             // 
-            this.BTNClear.Location = new System.Drawing.Point(282, 32);
+            this.BTNClear.Location = new System.Drawing.Point(210, 27);
+            this.BTNClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BTNClear.Name = "BTNClear";
-            this.BTNClear.Size = new System.Drawing.Size(75, 23);
+            this.BTNClear.Size = new System.Drawing.Size(56, 19);
             this.BTNClear.TabIndex = 6;
             this.BTNClear.Text = "Clear";
             this.BTNClear.UseVisualStyleBackColor = true;
@@ -99,15 +106,16 @@
             // 
             // RulesReferencer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1046, 537);
+            this.ClientSize = new System.Drawing.Size(784, 436);
             this.Controls.Add(this.BTNClear);
             this.Controls.Add(this.TBRuleDetails);
             this.Controls.Add(this.LBLSearch);
             this.Controls.Add(this.LVRulesList);
             this.Controls.Add(this.BTNSearch);
             this.Controls.Add(this.TBSearchTerm);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "RulesReferencer";
             this.Text = "D&D 5E Rules Reference";
             this.Load += new System.EventHandler(this.RulesReferencer_Load);

@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Rule = RuleLibrary.Rule;
 
 namespace RulesReferencer
 {
@@ -34,7 +33,7 @@ namespace RulesReferencer
         private void PopulateRulesList(RuleCollection collection)
         {
             LVRulesList.Items.Clear();
-            foreach(Rule r in collection.Rules)
+            foreach(RuleRef r in collection.Rules)
             {
                 LVRulesList.Items.Add(r.Title);
             }
@@ -47,7 +46,7 @@ namespace RulesReferencer
         private void SearchRules(string searchTerm)
         {
             searchedRuleset = new RuleCollection();
-            foreach(Rule r in fullRuleset)
+            foreach(RuleRef r in fullRuleset)
             {
                 if(r.Title.ToUpper().Contains(searchTerm.ToUpper()) || r.Details.ToUpper().Contains(searchTerm.ToUpper()))
                 {

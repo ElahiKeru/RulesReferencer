@@ -8,18 +8,18 @@ using System.Xml;
 
 namespace RuleLibrary
 {
-    public class RuleCollection : IEnumerable<Rule>
+    public class RuleCollection : IEnumerable<RuleRef>
     {
         private readonly string rulePath;
-        private List<Rule> rules;
+        private List<RuleRef> rules;
 
-        public List<Rule> Rules
+        public List<RuleRef> Rules
         {
             get
             {
                 if(rules == null)
                 {
-                    rules = new List<Rule>();
+                    rules = new List<RuleRef>();
                 }
                 return rules;
             }
@@ -45,15 +45,15 @@ namespace RuleLibrary
             XmlDocument inputDoc = new XmlDocument();
             inputDoc.Load(rulePath);
 
-            XmlNodeList rules = inputDoc.GetElementsByTagName("rule");
+            XmlNodeList ruleset = inputDoc.GetElementsByTagName("rule");
 
-            foreach(XmlNode xn in rules)
+            foreach(XmlNode xn in ruleset)
             {
-                Rules.Add(new Rule(xn["title"].InnerText, xn["details"].InnerText));
+                Rules.Add(new RuleRef(xn["title"].InnerText, xn["details"].InnerText));
             }
         }
 
-        public IEnumerator<Rule> GetEnumerator()
+        public IEnumerator<RuleRef> GetEnumerator()
         {
             return Rules.GetEnumerator();
         }
@@ -63,13 +63,13 @@ namespace RuleLibrary
             return Rules.GetEnumerator();
         }
 
-        public Rule this[string index]
+        public RuleRef this[string index]
         {
             get
             {
-                if (rules == null) rules = new List<Rule>();
-                Rule target = null;
-                foreach(Rule r in rules)
+                if (rules == null) rules = new List<RuleRef>();
+                RuleRef target = null;
+                foreach(RuleRef r in rules)
                 {
                     if (r.Title.Equals(index))
                     {
@@ -80,16 +80,16 @@ namespace RuleLibrary
             }
         }
 
-        public Rule this[int index]
+        public RuleRef this[int index]
         {
             get
             {
-                if (rules == null) rules = new List<Rule>();
+                if (rules == null) rules = new List<RuleRef>();
                 return rules[index];
             }
         }
 
-        public void Add(Rule target)
+        public void Add(RuleRef target)
         {
             Rules.Add(target);
         }

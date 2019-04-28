@@ -2,12 +2,664 @@
 <rules>
 	<rule>
 		<title>The D20</title>
-		<details>In cases where the outcome of an action is uncertain, the game relies on rolls of a 20-sided die, a d20, to determine success and failure. Every character and monster in the game has capabilities defined by six [ABILITY SCORE]s. These ability scores and the [ABILITY MODIFIER]s derived from them are the basis for almost every d20 roll that a player makes on a character's or monster's behalf. [ABILITY CHECK]s, [ATTACK ROLL]s, and [SAVING THROW]s are the three main kinds of d20 rolls, forming the core of the rules of the game. All three follow these simple steps.
-     1.) Roll the die and add a modifier - Roll a d20 and add the relevant modifier. This is typically a modifier derived from one of the six [ABILITY SCORE]s and it sometimes includes a [PROFICIENCY] bonus to reflect a character's particular skill.
+		<details>     In cases where the outcome of an action is uncertain, the game relies on rolls of a 20-sided die, a d20, to determine success and failure. Every character and monster in the game has capabilities defined by six [ABILITY SCORE]s. These ability scores and the [ABILITY MODIFIER]s derived from them are the basis for almost every d20 roll that a player makes on a character's or monster's behalf. [ABILITY CHECK]s, [ATTACK ROLL]s, and [SAVING THROW]s are the three main kinds of d20 rolls, forming the core of the rules of the game. All three follow these simple steps.
+     1.) Roll the die and add a modifier - Roll a d20 and add the relevant modifier. This is typically a modifier derived from one of the six [ABILITY SCORE]s and it sometimes includes a [PROFICIENCY BONUS] to reflect a character's particular skill.
      2.) Apply circumstantial bonuses and penalties - A class feature, spell, particular circumstance, or some other effect might give a bonus or penalty to the check
      3.) Compare the total to a target number - If the total equals or exceeds the target number, the [ABILITY CHECK], [ATTACK ROLL], or [SAVING THROW] is a success. Otherwise it's a failure. The DM is usually the one who determines the target numbers and tells players whether their [ABILITY CHECK]s, [ATTACK ROLL]s, and [SAVING THROW]s succeed or fail.
      The target number for an [ABILITY CHECK] or [SAVING THROW] is called a [DIFFICULTY CLASS (DC)].
      The target number for an [ATTACK ROLL] is called an [ARMOR CLASS (AC)].</details>
+	</rule>
+	<rule>
+		<title>Advantage/Disadvantage</title>
+		<details>     Sometimes an [ABILITY CHECK], [ATTACK ROLL], or [SAVING THROW] is modified by special situations called [ADVANTAGE] and [DISADVANTAGE]. [ADVANTAGE] reflects the positive circumstances surrounding a d20 roll, while [DISADVANTAGE] reflects the opposite. You roll a second d20 when you make the roll. Use the higher of the two rolls if you have [ADVANTAGE], and the lower of the two when you have [DISADVANTAGE]. You cannot stack [ADVANTAGE] and [DISADVANTAGE] - if you get both from different circumstances they cancel out. Further you cannot stack multiple instances of [ADVANTAGE] or [DISADVANTAGE]. You will only ever have one extra die roll for a given situation.
+     When you have [ADVANTAGE] or [DISADVANTAGE] and something in the game, such as the halfling's Lucky trait, lets you reroll the d20, you can reroll only one of the dice. You choose which one. You usually gain advantage or disadvantage through the use of special abilities, actions, or spells. Inspiration can also give a character advantage on checks related to the character's personality, ideals, or bonds. The DM can also decide that circumstances influence a roll in one direction or the other and grant advantage or impose disadvantage as a result.</details>
+	</rule>
+	<rule>
+		<title>Level</title>
+		<details>     Typically, a character starts at 1st level and advances in level by adventuring and gaining [EXPERIENCE POINTS (XP)]. Depending on the situation however, your [DUNGEON MASTER (DM)] may have you build a character above first level.</details>
+	</rule>
+	<rule>
+		<title>Hit Points and Hit Dice</title>
+		<details>     Your character's [HIT POINTS (HP)] define how tough your character is in combat and other dangerous situations. Your hit points are determined by your [HIT DICE] (Short for Hit Point Dice).
+     At first level, your character has 1 [HIT DICE], and the die type is determined by your class. You start with [HIT POINTS (HP)] equal to the highest roll of that die, as indicated in your class description. You also add your [CONSTITUTION MODIFIER]. This is also your [HIT POINT MAXIMUM].</details>
+	</rule>
+	<rule>
+		<title>Proficiency Bonus</title>
+		<details>     The table that appears in your class description shows your [PROFICIENCY BONUS], which is +2 for a 1st-level character. Your [PROFICIENCY BONUS] applies to many of the numbers you'll be recording on a character sheet:
+     - [ATTACK ROLL]s using weapons you're proficient with.
+     - [ATTACK ROLL]s with spells you cast.
+     - [ABILITY CHECK]s using skills you're proficient in.
+     - [ABILITY CHECK]s using tools you're proficient with.
+     - [SAVING THROW]s you're proficient in.
+     - [SAVING THROW] [DIFFICULTY CLASS (DC)]s for spells you cast (Explained in each spellcasting class)
+     Your class determins your weapon proficiencies, your saving throw proficiencies, and some of your skill and tool proficiencies. Your background gives you additional skill and tool proficiencies, and some races give you more proficiencies.
+     Your [PROFICIENCY BONUS] can't be added to a single die roll or other number more than once. Occasionally, your proficiency bonus might be modified (doubled or halved, for example) before you apply it. IF a circumstance suggests that your [PROFICIENCY BONUS] applies more than once to the same roll or taht it should be multiplied more than once, you nevertheless add it only once, multiply it only once, and halve it only once.</details>
+	</rule>
+	<rule>
+		<title>Ability Scores</title>
+		<details>     Much of what your character does in the game depends on his or her six [ABILITY SCORE]s: [STRENGTH (STR)], [DEXTERITY (DEX)], [CONSTITUTION (CON)], [INTELLIGENCE (INT)], [WISDOM (WIS)], [CHARISMA (CHA)]. Each ability has a score, which is a number recorded on the character sheet.
+     There are several methods for generating your six [ABILITY SCORE]s:
+     - Roll 4: Roll 4d6 and drop the lowest dice. Repeat this process until you have 6 numbers.
+     - Roll 3: Roll 3d6. Repeat this process until you have 6 numbers.
+     - Point-Buy: you have 27 points to spend on your [ABILITY SCORE]s, which all start at and can go no lower than 8. The cost breakdown is as such:
+          8  -> 0 points
+          9  -> 1 point
+          10 -> 2 points
+          11 -> 3 points
+          12 -> 4 points
+          13 -> 5 points
+          14 -> 7 points
+          15 -> 9 points
+     Using this system, you cannot obtain a score higher than 15 in a given ability.
+     After ascertaining your [ABILITY SCORE]s, you must ascertain your [ABILITY MODIFIER]s by applying the following formula:
+          ([ABILITY SCORE] - 10) / 2, rounded DOWN.
+		</details>
+	</rule>
+	<rule>
+		<title>Armor Properties</title>
+		<details>     Armor table on PHB page 145 shows the cost, weight, and other properties of common armor types worn in the worlds of D&amp;D.
+     Armor Proficiency: Anyone can put on a suit of armor or strap on a shield, Only those proficient in the armor's use know how to wear it effectively, however. Your class gives you proficiency in certain types of armor and optionally shields. If you wear armor that you lack proficiency with, you have disadvantage on any ability check, saving throw, or attack roll that involves Strength or Dexterity, and you can't cast spells.
+     [ARMOR CLASS (AC)]: Armor protects its wearer from attacks. The armor (and shield) you wear determines your base [ARMOR CLASS (AC)].
+     Heavy Armor: Heavier armor interferes with the wearer's ability to move quickly, stealthily, and freely. If the Armor Table shows "Str 13" or "Str 15" in the Strength column for an armor type, the armor reduced the wearer's speed by 10 feet unless the wearer has a Strength score equal to or greater than the listed score.
+     Stealth: If the Armor Table shows "Disadvantage" in the Stealth column, the wearer has disadvantage on Stealth checks.
+     Shields: A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your [ARMOR CLASS (AC)] by 2. You can benefit from only one shield at a time.</details>
+	</rule>
+	<rule>
+		<title>Weapon Proficiency</title>
+		<details>     Your race, class, and feats can grant you proficiency with certain weapons or categories of weapons. The two categories are Simple and Martial. Most people can use simple weapons with proficiency. These weapons include clubs, maces, and other weapons often found in the hands of commoners. Martial weapons, including swords, axes, and polearms, require more specialized training to use effectively. Most warriors use Martial weapons because these weapons put their fighting style and training to best use.
+     Proficiency with a weapon allows you to add your [PROFICIENCY BONUS] to the attack roll for any attack you make with that weapon. If you make an attack roll using a weapon with which you lack proficiency, you do not add your proficiency bonus to the attack roll.</details>
+	</rule>
+	<rule>
+		<title>Weapon Properties</title>
+		<details>     Ammunition: You can use a weapon that has the ammunition property to make a ranged attack only if you have ammunition to fire from the weapon. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack. At the end of the battle you can recover half of your expended ammunition by taking a minute to search the battlefield.
+     If you use a weapon that has the ammunition property to make a melee attack, you treat the weapon as an [IMPROVISED WEAPON]. A sling must be loaded to deal any damage when used in this way.
+     Finesse: When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls.
+     Heavy: Small creatures have disadvantage on attack rolls with heavy weapons. A heavy weapon's size and bulk make it too large for a small creature to use effectively.
+     Light: A light weapon is small and easy to handle, making it ideal for use when fighting with two weapons.
+     Loading: Because of the time required to load this weapon, you can fire only one piece of ammunition from it when you use an action, bonus action, or reaction to fire it. Regardless of the number of attacks you can normally make.
+     Range: A weapon that can be used to make a ranged attack has a range shown in parentheses after the ammunition or thrown property. The range lists two numbers. the first is the weapon's normal range in feet, and the second indicates the weapon's maximum range. When attacking a target beyond normal range, you have disadvantage on the attack roll. You can't attack a target beyond the weapon's long range.
+     Reach: This weapon adds 5 feet to your reach when you attack with it.
+     Special: A weapon with the special property has unusual rules governing its use, explained in the weapon's description.
+     Thrown: If a weapon has the thrown property, you can throw the weapon to make a ranged attack. If the weapon is a melee weapon, you use the same ability modifier for that attack roll and damage roll that you would use for the melee attack with that weapon.
+     Two-Handed: This weapon requires two hands to use.
+     Versatile: This weapon can be used with one or two hands. A damage value in parentheses appears with the property - the damage when the weapon is used with two hands to make a melee attack.</details>
+	</rule>
+	<rule>
+		<title>Improvised Weapon</title>
+		<details>     An improvised weapon is any object you can wield in one or two hands, such as a broken glass, a table leg, a frying pan, a wagon wheel, or a dead goblin. In many cases, an improvised weapon is similar to an actual weapon and can be treated as such. For example a table leg can be considered basically a club. At the DM's option, a character proficient with a weapon can use a similar object as if it were that weapon and use his or her [PROFICIENCY BONUS].
+     An object that bears no resemblance to a weapon deals 1d4 damage (the DM assigns the type of damage it deals appropriate to the object). If a character uses a ranged weapon to make a melee attack, or thros a melee weapon that doesn't have the thrown property, it also deals 1d4 damage. An improvised thrown weapon has a normal range of 20 feet and a long range of 60 feet.</details>
+	</rule>
+	<rule>
+		<title>Silvered Weapons</title>
+		<details>     Some monsters that have immunity or resistance to nonmagical weapons are susceptible to silver weapons, so cautious adventurers can invest extra coin to plate their weapons with silver. You can silver a single weapon or ten pieces of ammunition for 100 GP. This cost represents not only the price of the silver, but the time and expertise needed to add silver to the weapon without making it less effective.</details>
+	</rule>
+	<rule>
+		<title>Multiclassing</title>
+		<details>     Multiclassing allows you to gain levels in multiple classes, and lets you mix abilities of those classes to realize a character concept that might not be reflected in one of the standard class options. The effects of this are many and detailed here.
+     Your levels in all of your classes are added together to determine your total character level. For example, if you're level 4 cleric, level 1 wizard, you are a level 5 character.
+     Prerequisites: To qualify for a new class, you must meet the ability score prerequisites for both your current class and your new one. The Prerequisites are:
+          - Barbarian -> Strength 13
+          - Bard      -> Charisma 13
+          - Cleric    -> Wisdom 13
+          - Druid     -> Wisdom 13
+          - Fighter   -> Strength or Dexterity 13
+          - Monk      -> Dexterity and Wisdom 13
+          - Paladin   -> Strength and Charisma 13
+          - Ranger    -> Dexterity and Wisdom 13
+          - Rogue     -> Dexterity 13
+          - Sorcerer  -> Charisma 13
+          - Warlock   -> Charisma 13
+          - Wizard    -> Intelligence 13
+     Experience Points: The experience point cost to level up is always based on your total character level, not your level in a particualr class.
+     Hit Points and Hit Dice: You gain the hit points from your new class as described for levels after 1st. You gain the 1st-level hit points for a class only when you are a 1st-level character.
+     You add together the Hit Dice granted by all your classes to form your pool of Hit Dice. If the Hit Dice are the same die type, you can simply pool them together. If your classes give you Hit Dice of different types, keep track of them separately.
+     Proficiency Bonus: Your proficiency bonus is always based on your total character level, not your level in a particular class.
+     Proficiencies: When you gain a level in a class other than your first, you gain only some of the class' starting proficiencies as below:
+          - Barbarian -> Shields, Simple Weapons, Martial Weapons
+          - Bard      -> Light Armor, One skill of your choice, one musical instrument of your choice.
+          - Cleric    -> Light Armor, Medium Armor, Shields
+          - Druid     -> Light Armor, Medium Armor, Shields (druids will not wear metal armor or use metal shields)
+          - Fighter   -> Light Armor, Medium Armor, Shields, Simple Weapons, Martial Weapons
+          - Monk      -> Simple Weapons, Shortswords
+          - Paladin   -> Lgith Armor, Medium Armor, Shields, Simple Weapons, Martial Weapons
+          - Ranger    -> Light Armor, Medium Armor, Shields, Simple Weapons, Martial Weapons, one skill from the class' skill list
+          - Rogue     -> Light Armor, one skill from the class' skill list, thieves' tools
+          - Sorcerer  -> NONE
+          - Warlock   -> Light Armor, Simple Weapons
+          - Wizard    -> NONE
+     Class Features: When you gain a new level in a class, you get its features for that level. A few features however have additional rules when you're multiclassing:
+          Channel Divinity: If you already have the Channel Divinity feature and gain it again from a new class, you gain the Channel Divinity effects granted by that class, but getting the feature again doesn't give you an additional use of it. You gain additional uses only when you reach a class level that explicitly gives them to you. Whenever you use the feature, you can choose any of the Channel Divinity effects available to you from your classes.
+          Extra Attack: If you gain the Extra Attack class feature from more than one class, they do NOT stack. Similarly, the Warlock Eldritch Invocation Thirsting Blade does not stack with Extra Attack.
+          Unarmored Defense: If you already have the Unarmored Defense feature, you can't gain it again from another class.
+          Spellcasting: your capacity for spellcastign depends partly on your combined levels in all your spellcasting classes and partly on your individual levels in those classes. Once you have the Spellcasting feature from more than one class, the rules change in the following ways.
+               Spells Known and Prepared: you determine what spells you know and can prepare for each class individually, as if you were a single-classed member of that class. Each spell you know and prepare is associated with one of your classes, and you use the spellcasting ability of that class to cast that spell. Similarly, a spellcasting focus such as a holy symbol can only be used for the spells from the class associated with that focus.
+               Spell Slots: You determine your available spell slots by adding together all your levels in bard, cleric, druid, sorcerer, and wizard classes, Half your levels (rounded down) in paladin and ranger, and A Third your levels (rounded down) in fighter or rogue if you're using Eldritch Knight or Arcane Trickster. Use this total to determine your spell slots by consulting the following table. If you have more than one spellcasting class, this table might give you spell slots for a level that is higher than the spells you know and can prepare. You can use those slots, but only to cast your lower-level spells. This will trigger Higher Spell Level effects.
+                    - 1  -> 2
+                    - 2  -> 3
+                    - 3  -> 4/2
+                    - 4  -> 4/3
+                    - 5  -> 4/3/2
+                    - 6  -> 4/3/3
+                    - 7  -> 4/3/3/1
+                    - 8  -> 4/3/3/2
+                    - 9  -> 4/3/3/3/1
+                    - 10 -> 4/3/3/3/2
+                    - 11 -> 4/3/3/3/2/1
+                    - 12 -> 4/3/3/3/2/1
+                    - 13 -> 4/3/3/3/2/1/1
+                    - 14 -> 4/3/3/3/2/1/1
+                    - 15 -> 4/3/3/3/2/1/1/1
+                    - 16 -> 4/3/3/3/2/1/1/1
+                    - 17 -> 4/3/3/3/2/1/1/1/1
+                    - 18 -> 4/3/3/3/3/1/1/1/1
+                    - 19 -> 4/3/3/3/3/2/1/1/1
+                    - 20 -> 4/3/3/3/3/2/2/1/1
+              Pact Magic: If you have both the Spellcasting class feature and the Pact Magic class feature from the warlock class, you can use the spell slots you gain from the Pact Magic feature to cast spells you know or have prepared from classes with the Spellcasting class feature, and you can use spell slots you gain from the Spellcasting class feature to cast warlock spells you know.
+	 </details>
+	</rule>
+	<rule>
+		<title>Feats</title>
+		<details>     A feat represents a talent or an area of expertise that gives a character special capabilities. It embodies training, experience, and abilities beyond what a class provides. At certain levels your class gives you the Ability Score Improvement feature. Using the optional feats rule, oyou can forgo taking that feature to take the feat of your choice instead. You can take each feat only once unless the feat's description says otherwise.
+     You must meet any prerequisite specified in a feat to take the feat. If you ever lose a feat's prerequisite, you can't use that feat until you regain that prerequisite.</details>
+	</rule>
+	<rule>
+		<title>Feat: Alert</title>
+		<details>     Always on the lookout for danger, you gain the following benefits
+     - You gain +5 to initiative
+     - You can't be surprised while you are conscious
+     - Other creatures don't gain advantage on attack rolls against you as a result of being hidden from you.</details>
+	</rule>
+	<rule>
+		<title>Feat: Athlete</title>
+		<details>     You have undergone extensive physical training to gain the following benefits
+     - Increase your Strength of Dexterity by 1 to a maximum of 20.
+     - When you are prone, standing up uses only 5 feet of your movement
+     - Climbing doesn't halve your speed
+     - you can make a running long jump or a running high jump after moving only 5 feet on foot instead of 10 feet</details>
+	</rule>
+	<rule>
+		<title>Feat: Actor</title>
+		<details>     Skilled at mimicry and dramatics, you gain the following benefits
+     - Increase your Charisma score by 1 to a maximum of 20.
+     - You have advantage on Deception and Performance checks when trying to pass yourself off as a different person
+     - You can mimic the speech of another person or the sounds made by other creatures. You must have heard the person speaking or heard the creature make the sound, for at least 1 minute. A successful Insight check contested by your Deception check allows a listener to determine that the effects are faked.</details>
+	</rule>
+	<rule>
+		<title>Feat: Charger</title>
+		<details>     When you use your action to Dash, you can use a bonus action to make one melee weapon attack or to shove a creature. If you move at least 10 feet in a straight line immediately before taking this bonus action, you either gain a +5 bonus to the attack's damage roll or push the target up to 10 feet away from you.</details>
+	</rule>
+	<rule>
+		<title>Feat: Crossbow Expert</title>
+		<details>     Thanks to extensive practice with the crossbow, you gain the following benefits
+     - You ignore the loading quality of crossbows with which you're proficient
+     - Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls.
+     - When you use the Attack action and attack with a one-handed weapon, you can use a bonus action to attack with a loaded hand crossbow you are holding.</details>
+	</rule>
+	<rule>
+		<title>Feat: Defensive Duelist</title>
+		<details>     Prerequisite - Dexterity 13 or higher
+     When you are wielding a finesse weapon with which you are proficient and another creature hits you with a melee attack, you can use your reaction to add your proficiency bonus to your AC for that attack, potentially causing the attack to miss you.</details>
+	</rule>
+	<rule>
+		<title>Feat: Dual Wielder</title>
+		<details>     You master fighting with two weapons, gaining the following benefits
+     - You gain a +1 bonus to AC while you are wielding a separate melee weapon in each hand
+     - You can use two-weapon fighting even when the one-handed melee weapons you are wielding aren't light
+     - You can draw or stow two one-handed weapons when you would normally be able to draw or stow only one</details>
+	</rule>
+	<rule>
+		<title>Feat: Dungeon Delver</title>
+		<details>     Alert to the hidden traps and secret doors found in many dungeons, you gain the following benefits
+     - You have advantage on Perception and Investigation checks made to detect the presence of secret doors
+     - You have advantage on saving throws made to avoid or resist traps
+     - You have ressitance to the damage dealt by traps
+     - You can search for traps while traveling at a normal pace instead of a slow pace</details>
+	</rule>
+	<rule>
+		<title>Feat: Durable</title>
+		<details>     Hardy and resilient, you gain the following benefits
+     - Increase your Constitution score by 1 to a maximum of 20
+     - When you roll a Hit Die to regain hit points, the minimum number of hit points you can regain from the roll equals twice your Constitution Modifier (minimum 2)</details>
+	</rule>
+	<rule>
+		<title>Feat: Elemental Adept</title>
+		<details>     Prerequisite - The ability to cast at least one spell
+     When you gain this feat choose one of the following damage types: Acid, Cold, Fire, Lightning, or Thunder. Spells you cast ignore resistance to damage of the chosen type. In addition, when you roll damage for a spell you cast that deals damage of that type, you can treat any 1 on the damage dice as a 2.
+     You can select this feat multiple times. Each time yo do so, you must choose a different damage type</details>
+	</rule>
+	<rule>
+		<title>Feat: Grappler</title>
+		<details>     Prerequisite - Strength 13 or higher
+     You've developed the skills necessary to hold your own in close-quarters grappling. You gain the following benefits
+     - You have advantage on attack rolls against a creature you are grappling
+     - You can use your action to try to pin a creature grappled by you. To do so, make another grapple check. If you succeed, you and the creature are both restrained until the grapple ends
+     - Creatures that are one size larger than you don't automatically succeed on checks to escape your grapple</details>
+	</rule>
+	<rule>
+		<title>Feat: Great Weapon Fighting</title>
+		<details>     You've learned to put the weight of a weapon to your advantage, letting its momentum empower your strikes. You gain the following benefits
+     - On your turn, when you score a critical hit with a melee weapon or reduce a creature to 0 hit points with one, you can make one melee weapon attack as a bonus action
+     - Before you make a melee attack with a heavy weapon that you're proficient with, you can choose to tkae a -5 penalty on the attack roll. If the attack hits, you deal an extra 10 damage</details>
+	</rule>
+	<rule>
+		<title>Feat: Healer</title>
+		<details>     You are an able physician, allowing you to mend wounds quickly and get your allies back in the fight. You gain the following benefits
+     - When you use a healer's kit to stabilize a dying creature, that creature also regains 1 hit point
+     - As an action, you can spend one use of a healer's kit to tend to a creature and restore 1d6+4 hit points to it, plus additional hit points equal to the creature's maximum number of hit dice. Thi creature can't regain hitpoints from this feat again until it finishes a short or long rest</details>
+	</rule>
+	<rule>
+		<title>Feat: Heavily Armored</title>
+		<details>     Prerequisite - Proficiency with Medium Armor
+     you have trained to master the use of heavy armor, gaining the following benefits
+     - Increase your Strength score by 1, to a maximum of 20
+     - You gain proficiency with heavy armor</details>
+	</rule>
+	<rule>
+		<title>Feat: Heavy Armor Master</title>
+		<details>     Prerequisite - Proficiency with Heavy Armor
+     You can use your armor to deflect strikes that would kill others. You gain the following benefits
+     - Increase your Strength score by 1 to a maximum of 20
+     - While you are wearing heavy armor, bludgeoning, piercing, and slashing damage that you take from non-magical weapons is reduced by 3</details>
+	</rule>
+	<rule>
+		<title>Feat: Inspiring Leader</title>
+		<details>     Prerequisite - Charisma 13 or higher
+     You can spend 10 minutes inspiring your companions, shoring up their resolve to fight. When you do so, choose up to six friendly creatures (which can include yourself) within 30 feet of you who can see or hear you and who can understand you. Each creature can gain temporary hit points squal to your level + your Charisma Modifier. A creature can't gain temporary hit points from this feat again until it has finished a short or long rest</details>
+	</rule>
+	<rule>
+		<title>Feat: Keen Mind</title>
+		<details>     You have a mind that can track time, direction, and detail with uncanny precision. You gain the following benefits
+     - Increase your Intelligence by 1 to a max of 20
+     - You always know which way is north
+     - You always know the number of hours left before the next sunrise or sunset
+     - You can accurately recall anything you have seen or heard within the past month</details>
+	</rule>
+	<rule>
+		<title>Feat: Lightly Armored</title>
+		<details>     You have trained to master the use of light armor, gaining the following benefits
+     - Increase your Strength of Dexterity score by 1 to a maximum of 20
+     - You gain proficiency with Light Armor</details>
+	</rule>
+	<rule>
+		<title>Feat: Linguist</title>
+		<details>     You have studied languages and codes, gaining the following benefits
+     - Increase your Intelligence score by 1 to a maximum of 20
+     - You learn three languages of your choice
+     - You can ably create written ciphers. Others can't decipher a code you create unless you teach them, they succeed on an Intelligence Check (DC equal to your Intelligence score + your Proficiency Bonus) or they use magic to decipher it</details>
+	</rule>
+	<rule>
+		<title>Feat: Lucky</title>
+		<details>     You have inexplicable luck that seems to kick in at just the right moment. You have 3 luck points. Whenever you make an attack roll, an ability check, or a saving throw, you can spend one luck point to roll an additional d20. You can choose to spend one of your luck points AFTER you roll the die, but BEFORE the outcome is determined. You can choose which of the d20s is used for the attack roll, ability check, or saving throw.
+     You can also spend one luck point when an attck roll is made against you. Roll a d20 and then choose whether the attack uses the attacker's roll or yours. If more than one creature spends a luck point to influence the outcome of a roll, the points cancel each other out and no additional dice are rolled. You regain your expended luck points when you finish a long rest.</details>
+	</rule>
+	<rule>
+		<title>Feat: Mage Slayer</title>
+		<details>     You have practiced techniques useful in melee combat against spellcasters, gaining the following benefits
+     - When a creature within 5 feet of you casts a spell, you can use your reaction to make a melee weapon attack against that creature
+     - When you damage a creature that is concentrating on a spell, that creature has disadvantage on the saving throw it makes to maintain its concentration
+     - You have advantage on saving throws against spells cast by creatures within 5 feet of you</details>
+	</rule>
+	<rule>
+		<title>Feat: Magic Initiate</title>
+		<details>     Choose a class: Bard, Cleric, Druid, Sorcerer, Warlock, or Wizard. You learn two cantrips of your choice from that class' spell list. In addition, choose one 1st-level spell from that same list. You can learn that spell and cast it at its lowest level. Once you cast it, you must finish a long rest before you can cast it again. Your spellcasting ability for these spells depends on the class you chose: Charisma for the Bard, Sorcerer, or Warlock, Wisdom for Cleric or Druid, or Intelligence for the Wizard</details>
+	</rule>
+	<rule>
+		<title>Feat: Martial Adept</title>
+		<details>     You have martial training that allows you to perform special combat maneuvers. You gain the following benefits
+     - You learn two maneuvers of your choice from among those available to the Battle Master archetype in the fighter class. If a meaneuver you use requires the target to make a saving throw to resist its effects, the saving throw DC equals 8 + your Proficiency Modifier + your Strength or Dexterity Modifier (your choice)
+     - If you already have superiority dice, you gain one more. Otherwise you have one superiority die which is a d6. This die is used to fuel your maneuvers. A superiority die is expended when you use it. You regain your expended superiority dice when you finish a short or long rest</details>
+	</rule>
+	<rule>
+		<title>Feat: Medium Armor Master</title>
+		<details>     Prerequisite - Proficiency with Medium Armor
+     You have practiced moving in Medium Armor to gain the following benefits
+     - Wearing medium armor doesn't impose disadvantage on your Stealth checks
+     - When you wear Medium Armor, you can add 3, rather than 2, to your AC if you have a Dexterity of 16 or higher</details>
+	</rule>
+	<rule>
+		<title>Feat: Mobile</title>
+		<details>     You are exceptionally speedy and agile. You gain the following benefits
+     - Your speed increases by 10 feet
+     - When you use the dash action, difficult terrain doesn't cost you extra movement on that turn
+     - When you make a melee attack against a creature, you don't provoke opportunity attacks from that creature for the rest of the turn, whether you hit or not</details>
+	</rule>
+	<rule>
+		<title>Feat: Moderately Armored</title>
+		<details>     Prerequisite - Proficiency with Light Armor
+     You have trained to master the use of Medium Armor and shields, gaining the following benefits
+     - Increase your Strength or Dexterity by 1 to a maximum of 20
+     - You gain Proficiency in Medium Armor and Shields</details>
+	</rule>
+	<rule>
+		<title>Feat: Mounted Combatant</title>
+		<details>     You are dangerous foe to face while mounted. While you are mounted and aren't incapacitated, you gain the following benefits
+     - You have advantage on melee attack rolls against any unmounted creature that is smaller than your mount
+     - You can force an attack targeted at your mount to target you instead
+     - If your mount is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half if they fail.</details>
+	</rule>
+	<rule>
+		<title>Feat: Observant</title>
+		<details>     Quick to notice details of your environment, you gain the following benefits
+     - Increase your Intelligence or Wisdom score by 1 to a maximum of 20
+     - If you can see a creature's mouth while it is speaking a language you understand, you can read their lips
+     - You have a +5 to your passive Perception and passive Investigation score</details>
+	</rule>
+	<rule>
+		<title>Feat: Polearm Master</title>
+		<details>     You can keep your enemies at bay with reach weapons. You gain the following benefits
+     - When you take the Attack action and attack with only a Glaive, Halberd, or Quarterstaff, you can use a bonus action to make a melee attack with the opposite end of the weapon. The weapon's damage die for this attack is a d4, and the attack deals bludgeoning damage
+     - While you are wielding a Glaive, Halberd, Pike, or Quarterstaff, other creatures provoke an opportunity attack from you when they enter your reach</details>
+	</rule>
+	<rule>
+		<title>Feat: Resilient</title>
+		<details>     Choose one ability score. You gain the following benefits
+     - Increase the chosen ability score by 1 to a maximum of 20
+     - You gain proficiency in saving throws using the chosen ability</details>
+	</rule>
+	<rule>
+		<title>Feat: Ritual Caster</title>
+		<details>     Prerequisite - Intelligence or Wisdom 13 or higher
+     You have learned a number of spells that you can cast as rituals. These spells are written in a Ritual Book, which you must have on hand while casting one of them.
+     When you choose this feat, you acquire a Ritual Book holding two 1st-level spells of your choice. Choose one of the following classes: Bard, Cleric, Druid, Sorcerer, Warlock, or Wizard. You must choose your spells from that class' spell list, and the spells you choose must have the Ritual tag. The class you choose also determines your spellcasting ability for those spells; Charisma for the Bard, Sorcerer, or Warlock, Wisdom for the Cleric or Druid, or Intelligence for the Wizard.
+     If you come across a spell in written form, such as a scroll or a wizard's spellbook, you might be able to add it to your Ritual Book. The spell must be on the spell list for the class you chose, the spells level can be no higher than half your level (rounded up), and it must have the Ritual tag. The process of copying the spell into your ritual book takes 2 hours per level of the spell and costs 50 gp per level. The cost represents material components you expend as you experiment with the spell to master it, as well as the fine inks you need to record it</details>
+	</rule>
+	<rule>
+		<title>Feat: Savage Attacker</title>
+		<details>     Once per turn when yo roll damage for amelee weapon attack, you can reroll the weapon's damage dice and use either total</details>
+	</rule>
+	<rule>
+		<title>Feat: Sentinel</title>
+		<details>     You have mastered techniques to take advantage of every drop in any enemy's guard, gaining the following benefits
+     - When you hit a creature with an Opportunity Attack, their speed becomes 0 for the rest of the turn
+     - Creatures within 5 feet of you provoke Opportunity Attacks from you even if they take the Disengage action before leaving your reach
+     - When a creature within 5 feet of you makes an attack against a target other than you (and that target doesn't have this feat), you can use your reaction to make a melee weapon attack against the attacking creature</details>
+	</rule>
+	<rule>
+		<title>Feat: Sharpshooter</title>
+		<details>     You have mastered ranged weapons and can make shots that others find impossible. You gain the following benefits
+     - Attacking at long range doesn't impose disadvantage on your ranged weapon attack rolls
+     - Your ranged weapon attacks ignore half cover and three-quarters cover
+     - Before you make an attack with a ranged weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, you add +10 to the attack's damage</details>
+	</rule>
+	<rule>
+		<title>Feat: Shield Master</title>
+		<details>     You use shields not just for protection but also for offense. You gain the following benefits while you are wielding a shield
+     - If you take the Attack action on your turn, you can use a bonus action to try to shove a creature within 5 feet of you with your shield
+     - If you aren't incapacitated, you can add your shield's AC bonus to any Dexterity saving throw you make against a spell or other harmful effect that targets only you
+     - If you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can use your reaction to take no damage if you succeed on the saving throw, interposing your shield between yourself and the source of the effect</details>
+	</rule>
+	<rule>
+		<title>Feat: Skilled</title>
+		<details>     You gain proficiency in any compination of three skills or tools of your choice</details>
+	</rule>
+	<rule>
+		<title>Feat: Skulker</title>
+		<details>     Prerequisite - Dexterity 13 or higher
+     You are expert at slinking through the shadows. You gain the following benefits
+     - You can try to hide when you are lightly obscured from the creature from which you are hiding
+     - When you are hidden from a creature and miss it with a ranged weapon attack, making the attack doesn't reveal your position
+     - Dim light doesn't impose disadvantage on your Perception checks relying on sight</details>
+	</rule>
+	<rule>
+		<title>Feat: Spell Sniper</title>
+		<details>     Prerequisite - The ability to cast at least one spell
+     You have learned techniques to enhance your attacks with certain kinds of spells, gaining the following benefits
+     - When you cast a spell that requires you to make an attack roll, the spell's range is doubled
+     - Your ranged spell attacks ignore half cover and three-quarters cover
+     - You learn one cantrip that requires an attack roll. Choose the cantrip from the Bard, Cleric, Druid, Sorcerer, Warlock, or Wizard spell list. Your spellcastign ability for this cantrip depends on the spell list you chose from, Charisma for Bard, Sorcerer, or Warlock, Wisdom for Cleric or Druid, or Intelligence for Wizards</details>
+	</rule>
+	<rule>
+		<title>Feat: Tavern Brawler</title>
+		<details>     Accustomed to rough-and-tumble fighting using whatever weapons happen to be at hand, you gain the following benefits
+     - Increase your Strength or Constitution score by 1 to a maximum of 20
+     - You are proficient with improvised weapons and unarmed strikes
+     - Your unarmed strike uses a d4 for damage
+     - When you hit a creature with an unarmed strike or an improvised weapon on your turn you can use a bonus action to attempt to grapple the target</details>
+	</rule>
+	<rule>
+		<title>Feat: Tough</title>
+		<details>     Your hit point maximum increases by an amount equal to twice your level when you gain this feat. Whenever you gain a level thereafter, your hit point maximum increases by an additional 2 hit points</details>
+	</rule>
+	<rule>
+		<title>Feat: War Caster</title>
+		<details>     Prerequisite - The ability to cast at least one spell
+     You have practiced casting spells in the midst of combat, learning techniques that grant you the following benefits
+     - You have advantage on Constitution saving throws that you make to maintain concentration on a spell when you take damage
+     - You can perform the somatic components of spells even when you have weapons or a shield in one or both hands
+     - When a hostile creature's movement provokes an opportunity attack from you, you can use your reaction to cast a spell at the creature rather than making the opportunity attack. The spell must have a casting time of 1 action and must target only that creature</details>
+	</rule>
+	<rule>
+		<title>Feat: Weapon Master</title>
+		<details>     You have practiced extensively with a variety of weapons, gaining the following benefits
+     - Increase your Strength or Dexterity score by 1 to a maximum of 20
+     - You gain proficiency with four weapons of your choice</details>
+	</rule>
+	<rule>
+		<title>Ability Checks</title>
+		<details>     For every ability check, the DM decides which of the six abilities is relevant to the task at hand and the difficulty of the task, represented by a Difficulty Class (DC). The more difficult the task, the higher the DC. The Typical Difficulty Classes are as such
+     - Very Easy         -  5
+     - Easy              - 10
+     - Medium            - 15
+     - Hard              - 20
+     - Very Hard         - 25
+     - Nearly Impossible - 30
+     To make an ability check, roll a d20 and add the relevant ability modifier. As with other d20 rolls, apply bonuses and penalties and compare the total to the DC. If the total equals or exceed the DC, the check is a success, otherwise it's a failure which could mean either no progress or progress with a cost.</details>
+	</rule>
+	<rule>
+		<title>Contests</title>
+		<details>     Sometimes one character's or monster's efforts are directly opposed to another's. Thsi can occur when both of them are trying to do the same thing and only one can succeed, such as attempting to snatch up a magic ring that has fallen on the floor. This situation also applies when one of them is trying to prevent the other one from accomplishing a goal - for example, when a monster tries to force open a door that an adventurer is holding shut. In situations like these, the outcome is determined by a special form of ability checks, called a contest.
+     Both participants in a contest make ability checks appropriate to their efforts. They apply all appropriate bonuses and penalties, but instead of comparing the total to a DC, they compare the totals of their checks. The participant with the higher check total wins the contest. They either succeed at the action or prevent the other from succeeding.
+     If the contest results in a tie, the situation remains the same as it was before the contest. Thus, one could also win the contest by default depending on the situation.</details>
+	</rule>
+	<rule>
+		<title>Skills</title>
+		<details>     Each ability covers a broad range of capabilities, including skills thata character or monster can be proficient in. A skill represents a specific aspect of an ability score, and an individual's proficiency in a skill demonstrates a focus on that aspect.
+     For example, a Dexterity check might reflect a character's attempt to pull off an acrobatic stunt, to palm an object, or to stay hidden. Each of these aspects of Dexterity has an associated skill: Acrobatics, Sleight of Hand, and Stealth, respectively. So a character who has proficiency in the Stealth skill is particularly good at Dexterity checks related to sneaking and hiding.
+     The skills related to each ability score are shown in the following list (Note there's no skill tied to Constitution).
+     Strength
+          - Athletics
+     Dexterity
+          - Acrobatics
+          - Sleight of Hand
+          - Stealth
+     Intelligence
+          - Arcana
+          - History
+          - Investigation
+          - Nature
+          - Religion
+     Wisdom
+          - Animal Handling
+          - Insight
+          - Medicine
+          - Perception
+          - Survival
+     Charisma
+          - Deception
+          - Intimidation
+          - Performance
+          - Persuasion
+     Sometimes, the DM might ask for an ability check using a specific skill, at other times a player might ask the DM if proficiency in a particular skill applies to a check. In either case, proficiency in a skill means an individual can add his or her proficiency bonus to ability checks that involve this skill. Without proficiency in the skill, the individual makes a normal ability check.</details>
+	</rule>
+	<rule>
+		<title>Skills with Different Abilities</title>
+		<details>     Normally, Proficiency in a skill applies only to a specific kind of ability check. In some situations though, your proficiency might reasonably apply to a different kind of check. In such cases, the DM might ask for a check using an unusual combination of ability and skill or you might ask your DM if you can apply a proficiency to a different check. Examples of this might be Constitution applied to an Athletics check for an extended bout of exertion, or Strength applied to Intimidation for using your imposing physique.</details>
+	</rule>
+	<rule>
+		<title>Passive Checks</title>
+		<details>     A passive check is a special kind of ability check that doesn't involve any die rolls. Such a check can represent the average result for a task done repeatedly, such as searching for secret doors over and over again, or can be used when the DM wants to secretly determine whether the characters succeed at something without rolling dice, such as noticing a hidden monster. The formula for determining a passive score is 10 + all modifiers that normally apply to the check.</details>
+	</rule>
+	<rule>
+		<title>Working Together</title>
+		<details>     Sometimes two or more characters team up to attempt a task. The character who's leading the effort - or the one with the highest ability modifier - can make an ability check with advantage, reflecting the help provided by the other characters. In combat, this requires the Help action.
+     A character can only provide help if the task is one that he or she could attempt alone. For instance, a character couldn't help with picking a lock without proficiency in lockpicking tools. Moreover, a character can help only when two or more individuals working together would actually be productive</details>
+	</rule>
+	<rule>
+		<title>Group Checks</title>
+		<details>     When a number of individuals are trying to accomplish the same goal as a group, the DM might ask for a group ability check. In such a situation, the characters who are skilled a particular task help cover those who aren't.
+     To make a group ability check, everyone in the group makes the ability check. If at least half the group succeeds, the whole group succeeds - otherwise the group fails. Group checks don't come up very often, and they're most useful when all the characters succeed or fail as a group</details>
+	</rule>
+	<rule>
+		<title>Strength</title>
+		<details>A Strength check can model any attempt to life, push, pull, or break something, to force your body through a space, or to otherwise apply brute force to a situation.
+     - Athletics: An Athletics check covers difficult situations you encounter while climbing, jumping, or swimming, such as
+          - You attempt to climb a sheer or slippery cliff, avoid hazards while scaling a wall, or cling to a surface while something is trying to knock you off
+          - You try to jump an unusually long distance or pull off a stunt mid-jump
+          - You struggle to swim or stay afloat in treacherous currents, storm-tossed waves, or areas of thick seaweed. Another creature tries to push or pull you underwater or otherwise interferes with your swimming
+     Other Strength Checks: The DM might also call for a Strength check when you try to accomplish tasks like the following
+          - Force open a stuck, locked, or barred door
+          - Break free of bonds
+          - Push through a tunnel that is too small
+          - Hang on to a wagon as you're being dragged behind it
+          - Tip over a statue
+          - Keep a boulder from rolling
+     Attack Rolls and Damage: Typically you add your Strength modifier to your attack roll and your damage roll when attacking with a melee weapon such as a mace, a battleaxe, or a javelin. You use melee weapons to make melee attacks in hand-to-hand combat, and some of them ca be thrown to make a ranged attack
+     Lifting and Carrying: Your Strength score determines the amount of weight you can bear in the following ways:
+          - Carrying Capacity: Your carrying capacity is your Strength Score multiplied by 15. This is the weight (in pounds) that you can carry, which is high enough that most characters don't have to worry explicitly about it.
+          - Push, Drag, or Lift: You can push, drag, or lift a weight in pounds up to twice your carrying capacity (or 30 times your Strength Score). While pushing or dragging weight in excess of your carrying capacity, your speed drops to 5 feet
+          - Size and Strength: Larger creatures can bear more weight, whereas Tiny creatures can carry less. For each size category above medium, double the creature's carrying capacity and the amount if can Push, Drag, or Life. For a Tiny creature, halve these weights</details>
+	</rule>
+	<rule>
+		<title>Variant: Encumbrance</title>
+		<details>     The rules for lifting and carrying are intentionally simple - this is a variant for more in-depth rules for hindrance due to weight of equipment. When you use this variant, ignore the Strength column of the Armor table.
+     If you are carrying weight in excess of 5 times your Strength Score, you are Encumbered, which means your speed drops by 10 feet.
+     If you carry weight in excess of 10 times your Strength Score, you are instead Heavily Encumbered, which means your speed drops by 20 feet and you have Disadvantage on Ability Checks, Attack Rolls, and Saving Throws that use Strength, Dexterity, or Constitution</details>
+	</rule>
+	<rule>
+		<title>Dexterity</title>
+		<details>     A Dexterity check can model any attempt to move nimbly, quickly, or quietly, or to keep from falling on tricky footing. The Acrobatics, Sleight of Hand, and Stealth skills reflect aptitude in certain kinds of Dexterity checks.
+     - Acrobatics: Your Acrobatics check covers your attempt to stay on your feet in a tricky situation, such as when you're trying to run across a sheet of ice, balance on a tightrope, or stay upright on a rocking ship's deck. The DM might also call for Acrobatics checks to see if you can perform stunts including dives, rolls, somersaults, and flips
+     - Sleight of Hand: Whenever you attempt an act of legerdemain or manual trickery, such as planting something on someone else or concealing an object on your person, make a Slright of Hand check. The DM might lso call for a Sleight of Hand check to determine whether you can steal from someone
+     - Stealth: Make a Stealth check when you attempt to conceal yourself from enemies, slink past guards, slip away without being noticed, or sneak up on someone without being seen or heard
+     Other Dexterity Checks: The DM might call for a Dexterity check when you try to accomplish tasks like the following
+          - Control a heavy laden cart on a steep descent
+          - Steer a chariot around a tight turn
+          - Pick a lock
+          - Disable a trap
+          - Securely tie up a prisoner
+          - Wriggle free of bonds
+          - Play a stringed instrument
+          - Craft a small or detailed object
+     Attack Rolls and Damage: You ad you Dexterity Modifier to your Attack Roll and your Damage Roll when attacking with a Ranged Weapon, such as a sling or longbow. You can also add your Dexterity Modifier to your Attack Roll and your Damage Roll when attacking with a melee weapon that has the finesse property, such as a dagger or a rapier
+     Armor Class: Depending on the armor you wear, you might add some or all of your Dexterity Modifier to your Armor Class
+     Initiative: At the beginning of every combat you roll Initiative by making a Dexterity Check. Initiative determines the order of creatures' turns in combat.</details>
+	</rule>
+	<rule>
+		<title>Hiding</title>
+		<details>     When you try to hide, make a Stealth check. Until you are discovered or you stop hiding, that check's total is contested by the Perception check of any creature actively searching for signs of your presence.
+     You can't hide from a creature that can see you, and if you make noise (such as shouting a warning or knocking over a vase), you give away your position. An invisible creature can't be seen so it can always try to hide. Signs of its passage may still be noticed however and it must still remain silent.
+     In combat, most creatures stay alert for signs of danger all around, so if you come out of hiding and approach a creature it usually sees you. Under certain circumstances however, the DM might allow you to stay hidden as you approach a creature that is distracted, allowing you to gain advantage on an attack before you are seen
+     Passive Perception: When you hide, there's a chance someone will notice you even if they aren't actively searching. To determine whether such a creature notices you, the DM compares your Stealth check to the passive perception of others. If they have advantage/disadvantage, they add/subtract 5 from their passive scores. One of the main factors determining whether you can find a hidden creature or object is how well you can see in an area, which might be Lightly or Heavily Obscured.</details>
+	</rule>
+	<rule>
+		<title>Constitution</title>
+		<details>     Constitution measures health, stamina, and vital force.
+     Constitution Checks: Constitution checks are uncommon, and no skills apply to Constitution checks, because the endurance this ability represents is largely passive rather than involving specific effort on the part of a character or monster. A Constitution check can model your attempt to push beyond normal limits however.
+     The DM might call for a Constitution check when you try to accomplish tasks like the following
+          - Hold your breath
+          - March or labor for hours without rest
+          - Go without sleep
+          - Survive without food and water
+          - Quaff an entire stein of ale in one go
+     Hit Points: Your Constitution modifier contributes to your hit points. Typically, you add your Constitution modifier to each Hit Die you roll for your hit points. If your Constitution modifier changes, your hit point maximum changes as well, as though you had the new modifier from 1st level.</details>
+	</rule>
+	<rule>
+		<title>Intelligence</title>
+		<details>An Intelligence check comes into play when you need to draw on logic, education, memory, or deductive reasoning. The Arcana, History, Investigation, Nature, and Religion skills reflect aptitude in certain kinds of Intelligence Checks
+     - Arcana: Arcana checks measure your ability to recall lore about spells, magic items, eldritch symbols, magical traditions, the planes of existence, and the inhabitants of those planes.
+     - History: History checks measure your ability to recall lore about historical events, legendary people, ancient kingdoms, past disputes, recent wars, and lost civilizations.
+     - Investigation: When you look around for clues and make deductions based on those clues, you make an Investigation check. You might deduce the location of a hidden object, discern from the appearance of a wound what kind of weapon dealt it, or determine the weakest point in a tunnel that could cause it to collapse. Poring through ancient scrolls in search of a hidden fragment of knowledge might also call for an Investigation check.
+     - Nature: Nature checks measure your ability to recall lore about terrain, plants, animals, the weather, and natural cycles.
+     - Religion: Religion checks measure your ability to recall lore about deities, rites, prayers, religious hierarchies, holy symbols, and the practices of secret cults
+     Other Intelligence Checks: The DM might call for an Intelligence check when you try to accomplish tasks like the following
+          - Communicate with a creature without using words
+          - Estimate the value of a precious item
+          - Pull together a disguise to pass as a city guard
+          - Forge a document
+          - Recall lore about a craft or trade
+          - Win a game of skill
+     Spellcasting Ability: Wizards use Intelligence as their spellcasting ability, which helps determine the saving throw DCs of spells they cast</details>
+	</rule>
+	<rule>
+		<title>Wisdom</title>
+		<details>     A Wisdom check might reflect an effort to read body langauge, understand someone's feelings, notice things about the environment, or care for an injured person. The Animal Handling, Insight, Medicine, Perception, and Survival skills reflect aptitude in certain kinda of Wisdom checks.
+     - Animal Handling: When there is any question whether you can calm down a domesticated animal, keep a mount from getting spooked, or intuit an animal's intentions, the DM might call for an Animal Handling check. You also make an Animal Handling check to control your mount when you attempt a risky maneuver
+     - Insight: Insight checks decide whether you can determine the true intentions of a creature, such as when searching out a lie or predicting someone's next move. Doing so involves gleaning clues from body language, speech habits, and changes in mannerisms
+     - Medicine: 
+     - Perception: 
+     - Survival: </details>
+	</rule>
+	<rule>
+		<title></title>
+		<details></details>
+	</rule>
+	<rule>
+		<title></title>
+		<details></details>
+	</rule>
+	<rule>
+		<title></title>
+		<details></details>
+	</rule>
+	<rule>
+		<title></title>
+		<details></details>
+	</rule>
+	<rule>
+		<title></title>
+		<details></details>
+	</rule>
+	<rule>
+		<title></title>
+		<details></details>
+	</rule>
+	<rule>
+		<title></title>
+		<details></details>
+	</rule>
+	<rule>
+		<title></title>
+		<details></details>
+	</rule>
+	<rule>
+		<title></title>
+		<details></details>
+	</rule>
+	<rule>
+		<title></title>
+		<details></details>
+	</rule>
+	<rule>
+		<title></title>
+		<details></details>
+	</rule>
+	<rule>
+		<title></title>
+		<details></details>
+	</rule>
+	<rule>
+		<title></title>
+		<details></details>
+	</rule>
+	<rule>
+		<title></title>
+		<details></details>
+	</rule>
+	<rule>
+		<title></title>
+		<details></details>
+	</rule>
+	<rule>
+		<title></title>
+		<details></details>
+	</rule>
+	<rule>
+		<title></title>
+		<details></details>
+	</rule>
+	<rule>
+		<title></title>
+		<details></details>
 	</rule>
 	<rule>
 		<title></title>
