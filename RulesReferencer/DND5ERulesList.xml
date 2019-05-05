@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- 
+    <rule>
+        <title></title>
+        <details></details>
+    </rule>
+-->
 <rules>
 	<rule>
 		<title>The D20</title>
